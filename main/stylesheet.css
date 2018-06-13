@@ -1,6 +1,3 @@
-h1 {
-  color: black;
-}
 /* Slide in navigation*/
 
 .hamburger {
@@ -57,20 +54,10 @@ h1 {
 
 /* Slide in navigation*/
 
+/* Header */
+
 .header-img {
   margin-top: 40px;
-}
-
-.row div {
-  border: solid 1px pink;
-}
-
-.container {
-  width: 90%;
-}
-
-.restuarant-boxes {
-  margin-top: 70px;
 }
 
 .header {
@@ -94,18 +81,57 @@ h1 {
 .header div form, .header div h1, .header button {
   display: inline-block;
 }
+
+/* Header */
+
+/* Footer */
+footer a {
+  font-size: 28px;
+  color: white;
+  padding: 5px;
+}
+
+footer #facebook:hover {
+  color: #3B5998;
+  text-decoration: none;
+}
+
+footer #twitter:hover {
+  color: #1dcaff;
+  text-decoration: none;
+}
+
+footer #instagram:hover {
+  color: #8a3ab9;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  width: 100%;
+  background-color: #a4b2b7;
+  color: white;
+  text-align: center;
+}
+
+/* Footer */
+
+* {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.container {
+  width: 90%;
+}
+
+.restuarant-boxes {
+  margin-top: 70px;
+}
+
 body {
   margin-bottom: 60px;
-}
-footer {
-   position: fixed;
-   left: 0;
-   right: 0;
-   margin: auto;
-   bottom: 0;
-   width: 90%;
-   background-color: pink;
-   color: white;
-   text-align: center;
-
 }
