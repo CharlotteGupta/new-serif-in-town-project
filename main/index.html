@@ -5,6 +5,9 @@
   <title>Index</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,6 +15,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
@@ -26,53 +31,152 @@
 
   <span class="hamburger" onclick="openNav()"><i class="fas fa-bars"></i></span>
 
-<div class="container">
-  <div class="header">
-    <img class="center-block header-img img-responsive" src="http://via.placeholder.com/1500x350" alt="placeholder">
-    <div class="overlay">
-      <h1>A Place For...</h1>
-      <form class="form-inline">
-        <select class="form-control" name="categories">
-          <option value="vegetarian">Vegetarian</option>
-          <option value="vegan">Vegan</option>
-          <option value="dog-lovers">Dog Lovers</option>
-          <option value="families">Families</option>
-          <option value="gluten-free">Gluten Free</option>
-          <option value="fast-food">Fast Food</option>
-          <option value="fine-dining">Fine Dining</option>
-        </select>
-        <button type="submit" class="btn btn-default">Search</button>
-      </form>
-    </div>
-  </div>
-
-    <div class="row restuarant-boxes">
-      <div class="col-md-3"> restuarant boxes </div>
-      <div class="col-md-3"> restuarant boxes </div>
-      <div class="col-md-3"> restuarant boxes </div>
-      <div class="col-md-3"> restuarant boxes </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3"> restuarant boxes </div>
-      <div class="col-md-3"> restuarant boxes </div>
-      <div class="col-md-3"> restuarant boxes </div>
-      <div class="col-md-3"> restuarant boxes </div>
-    </div>
-
-</div>
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4  col-md-offset-4">
-        <a href="#" id="facebook" class="fab fa-facebook-square"></a>
-
-        <a href="#" id="twitter" class="fab fa-twitter-square"></a>
-
-        <a href="#" id="instagram" class="fab fa-instagram"></a>
+  <div class="container container-change">
+    <div class="header">
+      <img class="center-block header-img img-responsive" src="images/header2.jpg" alt="placeholder">
+      <div class="overlay">
+        <h1>A Place For...</h1>
+        <div class="btn-group">
+          <button id="button-styling" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filters <span class="caret"></span>
+  </button>
+          <div class="dropdown-menu">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="vegans">Vegans</button>
+            <button class="btn btn-default filter-button" data-filter="vegetarians">Vegetarians</button>
+            <button class="btn btn-default filter-button" data-filter="dog-lovers">Dog Lovers</button>
+            <button class="btn btn-default filter-button" data-filter="families">Families</button>
+            <button class="btn btn-default filter-button" data-filter="fine-dining">Fine Dining</button>
+            <button class="btn btn-default filter-button" data-filter="fast-food">Fast Food</button>
+            <button class="btn btn-default filter-button" data-filter="gluten-free">Gluten Free</button>
+            <button class="btn btn-default filter-button" data-filter="beer-gardens">Beer Gardens</button>
+          </div>
+        </div>
+        <div class="desktop-filter">
+          <button class="btn btn-default filter-button" data-filter="all">All</button>
+          <button class="btn btn-default filter-button" data-filter="vegans">Vegans</button>
+          <button class="btn btn-default filter-button" data-filter="vegetarians">Vegetarians</button>
+          <button class="btn btn-default filter-button" data-filter="dog-lovers">Dog Lovers</button>
+          <button class="btn btn-default filter-button" data-filter="families">Families</button>
+          <button class="btn btn-default filter-button" data-filter="fine-dining">Fine Dining</button>
+          <button class="btn btn-default filter-button" data-filter="fast-food">Fast Food</button>
+          <button class="btn btn-default filter-button" data-filter="gluten-free">Gluten Free</button>
+          <button class="btn btn-default filter-button" data-filter="beer-gardens">Beer Gardens</button>
+        </div>
       </div>
     </div>
   </div>
-</footer>
+  <div class="container filter-gallery">
+    <div class="row">
+      <br/>
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 filter vegans vegetarians fast-food">
+        <img src="images/image-size-test.jpg" class="img-responsive">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Rola Wala</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-6 text-center restuarant-link">
+            <p>
+              Visit their website!
+            </p>
+            <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <ul>
+              <li>
+                Vegans
+              </li>
+              <li>
+                Vegetarians
+              </li>
+              <li>
+                Fast Food
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 filter vegetarians">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter dog-lovers">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter families">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter fine-dining">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter fast-food">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter gluten-free">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter beer-gardens">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter vegans">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter vegetarians">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter dog-lovers">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter families">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter fine-dining">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter fast-food">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter gluten-free">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-12 filter beer-gardens">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <a href="#" id="facebook" class="fab fa-facebook-square"></a>
+          <br>
+          <a href="#" id="twitter" class="fab fa-twitter-square"></a>
+          <br>
+          <a href="#" id="instagram" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     function openNav() {
