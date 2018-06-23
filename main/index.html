@@ -20,23 +20,26 @@
 
 <body>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-  <span class="hamburger" onclick="openNav()"><i class="fas fa-bars"></i></span>
+    <span class="hamburger" onclick="openNav()"><i class="fas fa-bars"></i></span>
+  </nav>
 
+<header>
     <div class="header">
       <!-- <img class="center-block header-img img-responsive" src="images/header.jpg" alt="placeholder"> -->
       <div class="overlay">
         <h1>A Place For...</h1>
-        <div class="btn-group">
+        <div class="btn-group" id="btn-override">
           <button id="button-styling" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Filters <span class="caret"></span>
-  </button>
+          </button>
           <div class="dropdown-menu">
             <button class="btn btn-default filter-button" data-filter="all">All</button>
             <button class="btn btn-default filter-button" data-filter="vegans">Vegans</button>
@@ -62,7 +65,9 @@
         </div>
       </div>
     </div>
+  </header>
 
+  <section>
   <div class="container filter-gallery container-main">
     <div class="row">
       <br/>
@@ -175,15 +180,6 @@
     </div>
   </footer>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "200px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-  </script>
 </body>
 
 </html>

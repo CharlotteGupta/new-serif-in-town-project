@@ -4,8 +4,8 @@
   font-size: 40px;
   cursor: pointer;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 40px;
+  left: 40px;
   z-index: 1;
   color: white;
 }
@@ -61,11 +61,6 @@
 
 /* Header */
 
-/* .header img {
-  width: 100%;
-  height: auto;
-} */
-
 .header h1 {
   font-size: 3em;
   font-family: 'Julius Sans One', sans-serif;
@@ -96,9 +91,9 @@
   box-shadow: 0px 9px 16px 0px rgba(50, 50, 50, 0.27);
 }
 
-/* .dropbtn {
-  display: none;
-} */
+#btn-override{
+  position: static;
+}
 
 /* Header */
 
@@ -141,6 +136,11 @@ footer {
 }
 
 /* Footer */
+.container-change {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
 
 * {
   font-family: 'Catamaran', sans-serif;
@@ -156,10 +156,28 @@ h1 {
 
 /* Filter system */
 
+.filter-gallery .row div {
+  border-radius: 8%;
+}
+
+.filter-gallery .gallery_product {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 10px solid white;
+  background-color: #d3d3d3;
+}
+
+/* .filter-gallery .row.
+, .filter-gallery {
+  margin: 0;
+} */
+
 .container-main {
   margin-top: 120px;
   border-radius: 5px;
     background-color: white;
+    display: relative;
 }
 
 .filter-button {
@@ -191,6 +209,7 @@ h1 {
 
 .gallery_product {
   margin-bottom: 5%;
+
 }
 
 .restuarant-link i {
@@ -238,11 +257,12 @@ h1 {
 
 @media only screen and (max-width: 950px) {
   .container-main {
-    margin-top: -150px;
+    margin-top: -160px;
     border-radius: 5px;
   }
   .hamburger {
     color: #468499;
+    background-color: #fff;
   }
   .header {
    background-image: none;
@@ -285,9 +305,14 @@ h1 {
   }
 }
 
-.container-change {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
+@media only screen and (max-width: 410px) {
+  .header h1 {
+    font-size: 2em;
+  }
+  .hamburger {
+    top: 3.5%;
+    left: 5%;
+  }
 }
+
   /* Media Queries */

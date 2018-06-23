@@ -20,26 +20,33 @@
 
 <body>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-
-  <span class="hamburger" onclick="openNav()"><i class="fas fa-bars"></i></span>
-  <div class="header">
-    <div class="overlay">
-      <h1>About</h1>
+  <nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </div>
 
-  <div class="container container-main">
-    <div class="row">
-      <div class="col-md-6"> box </div>
-      <div class="col-md-6"> box </div>
+    <span class="hamburger" onclick="openNav()"><i class="fas fa-bars"></i></span>
+  </nav>
+  <header>
+    <div class="header">
+      <div class="overlay">
+        <h1>About</h1>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <section>
+    <div class="container container-main">
+      <div class="row">
+        <div class="col-md-6"> Blah blah blah something about something </div>
+        <div class="col-md-6"> box </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <div class="row">
@@ -54,15 +61,6 @@
     </div>
   </footer>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "200px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-  </script>
 </body>
 
 </html>
