@@ -4,8 +4,8 @@
   font-size: 40px;
   cursor: pointer;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 40px;
+  left: 40px;
   z-index: 1;
   color: white;
 }
@@ -61,16 +61,17 @@
 
 /* Header */
 
-/* .header img {
-  width: 100%;
-  height: auto;
-} */
-
 .header h1 {
   font-size: 3em;
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.gallery_product h2{
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
 .header {
   position: relative;
   text-align: center;
@@ -96,9 +97,9 @@
   box-shadow: 0px 9px 16px 0px rgba(50, 50, 50, 0.27);
 }
 
-/* .dropbtn {
-  display: none;
-} */
+#btn-override {
+  position: static;
+}
 
 /* Header */
 
@@ -142,6 +143,12 @@ footer {
 
 /* Footer */
 
+.container-change {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   font-family: 'Catamaran', sans-serif;
 }
@@ -156,10 +163,43 @@ h1 {
 
 /* Filter system */
 
+.filter-gallery .row div {
+  /* border-radius: 8%; */
+  /* height: 400px; */
+}
+
+.filter-gallery .gallery_product {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 10px solid white;
+  background-color: #d3d3d3;
+  /* min-height: 365px;
+  min-height: 365px; */
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .filter-gallery .row.
+, .filter-gallery {
+  margin: 0;
+} */
+
 .container-main {
   margin-top: 120px;
   border-radius: 5px;
-    background-color: white;
+  background-color: white;
+  display: relative;
 }
 
 .filter-button {
@@ -191,6 +231,7 @@ h1 {
 
 .gallery_product {
   margin-bottom: 5%;
+  max-height: 365px;
 }
 
 .restuarant-link i {
@@ -208,20 +249,22 @@ h1 {
 }
 
 /*  contact page */
+
 .map-container {
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 60%; /* aspect ratio */
-	position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+  /* aspect ratio */
+  position: relative;
 }
 
 .googlemap {
-	border: 0;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .contact-details .fas {
@@ -229,24 +272,26 @@ h1 {
   color: #468499;
 }
 
-.contact-details p{
+.contact-details p {
   font-size: 1.5em;
 }
+
 /* contact page */
 
 /* Media Queries */
 
 @media only screen and (max-width: 950px) {
   .container-main {
-    margin-top: -150px;
+    margin-top: -160px;
     border-radius: 5px;
   }
   .hamburger {
     color: #468499;
+    background-color: #fff;
   }
   .header {
-   background-image: none;
-   }
+    background-image: none;
+  }
   .overlay {
     width: 100%;
     display: block;
@@ -281,13 +326,24 @@ h1 {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border-radius: 4px;
-
+    margin-top: -.0%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-top: 5%;
   }
 }
 
-.container-change {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
+@media only screen and (max-width: 410px) {
+  .header h1 {
+    font-size: 2em;
+  }
+  .hamburger {
+    top: 3.5%;
+    left: 5%;
+  }
 }
-  /* Media Queries */
+
+/* Media Queries */
