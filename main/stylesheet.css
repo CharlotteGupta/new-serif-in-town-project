@@ -1,5 +1,68 @@
-/* Slide in navigation*/
 
+.container-change {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Catamaran', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+h1 {
+  color: black;
+}
+
+.margin-change {
+  margin-top: -50px;
+}
+
+/* about page  */
+
+.module-header {
+    margin-bottom: 50px;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #BAC1C8;
+margin-left: auto;
+margin-right: auto;
+}
+
+.module-header img {
+    margin-bottom: 15px;
+}
+
+.module-header h2 strong {
+  color: #468499;
+}
+
+.module-header p {
+    font-size: 21px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.about-p p {
+  font-size: 18px;
+  list-style: none;
+}
+
+.about-info h3 {
+  color: #468499;
+  font-weight: bold;
+}
+
+.about-info {
+  padding-bottom: 50px;
+}
+/* about page  */
+
+/* Slide in navigation*/
 .hamburger {
   font-size: 40px;
   cursor: pointer;
@@ -96,6 +159,10 @@
   -webkit-box-shadow: 0px 9px 16px 0px rgba(50, 50, 50, 0.27);
   -moz-box-shadow: 0px 9px 16px 0px rgba(50, 50, 50, 0.27);
   box-shadow: 0px 9px 16px 0px rgba(50, 50, 50, 0.27);
+}
+
+.overlay-change {
+  top: 240px;
 }
 
 #btn-override {
@@ -244,30 +311,6 @@
 
 /* Footer */
 
-.container-change {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
-}
-
-.container-change {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  font-family: 'Catamaran', sans-serif;
-}
-
-body {
-  background-color: #f8f8f8;
-}
-
-h1 {
-  color: black;
-}
-
 /* Filter system */
 
 .filter-gallery .gallery_product {
@@ -403,6 +446,7 @@ h1 {
     top: 0;
     padding: 0;
     padding-top: 1%;
+    height: 110px;
   }
   .container-change {
     width: 100% !important;
@@ -448,7 +492,7 @@ h1 {
     left: 5%;
   }
 }
-/* 
+/*
 @media only screen and (max-width: 750px) {
   .container-main {
     width: 100% !important;
