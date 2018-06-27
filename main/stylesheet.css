@@ -1,4 +1,8 @@
 
+.changeColor {
+   color: black !important;
+}
+
 .container-change {
   width: 100% !important;
   margin: 0;
@@ -433,8 +437,7 @@ margin-right: auto;
     border-radius: 5px;
   }
   .hamburger {
-    color: #468499;
-    background-color: #fff;
+    color: #468499 !important;
   }
   .header {
     background-image: none;
@@ -492,6 +495,8 @@ margin-right: auto;
     left: 5%;
   }
 }
+
+
 /*
 @media only screen and (max-width: 750px) {
   .container-main {
